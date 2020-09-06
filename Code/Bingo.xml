@@ -1,0 +1,1044 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bingo</name>
+    </assembly>
+    <members>
+        <member name="T:Bingo.Common.AutoMapperHelper">
+            <summary>
+                AutoMapper扩展帮助类
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.MapTo``1(System.Object)">
+            <summary>
+                类型映射
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.DMapTo``1(System.Object)">
+            <summary>
+                类型映射
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.MapToEntity``1(System.Object,``0)">
+            <summary>
+                Dto映射到实体对象
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.MapToList``1(System.Collections.IEnumerable)">
+            <summary>
+                集合列表类型映射
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.MapToList``2(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+                集合列表类型映射
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.MapTo``2(``0,``1)">
+            <summary>
+                类型映射
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.Init">
+            <summary>
+                初始化
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AutoMapperHelper.DynamicMap">
+            <summary>
+                对象对对象
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bingo.Common.BaseProcess">
+            <summary>
+            微信CKD基础方法
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.BaseProcess.GetOpenIdByCode(System.String,System.String,System.String)">
+            <summary>
+                获取OpenId
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.BaseProcess.GetOauth2OpenIdByCode(System.String,System.String,System.String)">
+            <summary>
+                获取Oauth2OpenId,公众号用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bingo.Common.JsSdkPackage">
+            <summary>
+            JSSDK签名包
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.AppId">
+            <summary>
+            APPID
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.NonceStr">
+            <summary>
+            NonceStr
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.Timestamp">
+            <summary>
+            Timestamp
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.Signature">
+            <summary>
+            Signature
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.Sha1Value">
+            <summary>
+            Sha1Value
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.IsDebug">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.JsSdkPackage.Tiket">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.HttpHelper">
+            <summary>
+            Http连接操作帮助类
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.GetHtml(Bingo.Common.HttpItem)">
+            <summary>
+            根据相传入的数据，得到相应页面数据
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.GetData(Bingo.Common.HttpItem,Bingo.Common.HttpResult)">
+            <summary>
+            获取数据的并解析的方法
+            </summary>
+            <param name="item"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.SetEncoding(Bingo.Common.HttpItem,Bingo.Common.HttpResult,System.Byte[])">
+            <summary>
+            设置编码
+            </summary>
+            <param name="item">HttpItem</param>
+            <param name="result">HttpResult</param>
+            <param name="ResponseByte">byte[]</param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.GetByte">
+            <summary>
+            提取网页Byte
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.SetRequest(Bingo.Common.HttpItem)">
+             <summary>
+             为请求准备参数
+             </summary>
+            <param name="item">参数列表</param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.SetCer(Bingo.Common.HttpItem)">
+            <summary>
+            设置证书
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.SetCerList(Bingo.Common.HttpItem)">
+            <summary>
+            设置多个证书
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.SetCookie(Bingo.Common.HttpItem)">
+            <summary>
+            设置Cookie
+            </summary>
+            <param name="item">Http参数</param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.SetPostData(Bingo.Common.HttpItem)">
+            <summary>
+            设置Post数据
+            </summary>
+            <param name="item">Http参数</param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.SetProxy(Bingo.Common.HttpItem)">
+            <summary>
+            设置代理
+            </summary>
+            <param name="item">参数对象</param>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.CheckValidationResult(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+            <summary>
+            回调验证证书问题
+            </summary>
+            <param name="sender">流对象</param>
+            <param name="certificate">证书</param>
+            <param name="chain">X509Chain</param>
+            <param name="errors">SslPolicyErrors</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Bingo.Common.HttpHelper.BindIPEndPointCallback(System.Net.ServicePoint,System.Net.IPEndPoint,System.Int32)">
+            <summary>
+            通过设置这个属性，可以在发出连接的时候绑定客户端发出连接所使用的IP地址。 
+            </summary>
+            <param name="servicePoint"></param>
+            <param name="remoteEndPoint"></param>
+            <param name="retryCount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bingo.Common.HttpItem">
+            <summary>
+            Http请求参考类
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.URL">
+            <summary>
+            请求URL必须填写
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Method">
+            <summary>
+            请求方式默认为GET方式,当为POST方式时必须设置Postdata的值
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Timeout">
+            <summary>
+            默认请求超时时间
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ReadWriteTimeout">
+            <summary>
+            默认写入Post数据超时间
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Host">
+            <summary>
+            设置Host的标头信息
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.KeepAlive">
+            <summary>
+             获取或设置一个值，该值指示是否与 Internet 资源建立持久性连接默认为true。
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Accept">
+            <summary>
+            请求标头值 默认为text/html, application/xhtml+xml, */*
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ContentType">
+            <summary>
+            请求返回类型默认 text/html
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.UserAgent">
+            <summary>
+            客户端访问信息默认Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Encoding">
+            <summary>
+            返回数据编码默认为NUll,可以自动识别,一般为utf-8,gbk,gb2312
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.PostDataType">
+            <summary>
+            Post的数据类型
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Postdata">
+            <summary>
+            Post请求时要发送的字符串Post数据
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.PostdataByte">
+            <summary>
+            Post请求时要发送的Byte类型的Post数据
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.CookieCollection">
+            <summary>
+            Cookie对象集合
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Cookie">
+            <summary>
+            请求时的Cookie
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Referer">
+            <summary>
+            来源地址，上次访问地址
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.CerPath">
+            <summary>
+            证书绝对路径
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.WebProxy">
+            <summary>
+            设置代理对象，不想使用IE默认配置就设置为Null，而且不要设置ProxyIp
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.IsToLower">
+            <summary>
+            是否设置为全文小写，默认为不转化
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Allowautoredirect">
+            <summary>
+            支持跳转页面，查询结果将是跳转后的页面，默认是不跳转
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Connectionlimit">
+            <summary>
+            最大连接数
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ProxyUserName">
+            <summary>
+            代理Proxy 服务器用户名
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ProxyPwd">
+            <summary>
+            代理 服务器密码
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ProxyIp">
+            <summary>
+            代理 服务IP,如果要使用IE代理就设置为ieproxy
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ResultType">
+            <summary>
+            设置返回类型String和Byte
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.Header">
+            <summary>
+            header对象
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Bingo.Common.HttpItem.ProtocolVersion" -->
+        <member name="P:Bingo.Common.HttpItem.Expect100Continue">
+            <summary>
+             获取或设置一个 System.Boolean 值，该值确定是否使用 100-Continue 行为。如果 POST 请求需要 100-Continue 响应，则为 true；否则为 false。默认值为 true。
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ClentCertificates">
+            <summary>
+            设置509证书集合
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.PostEncoding">
+            <summary>
+            设置或获取Post参数编码,默认的为Default编码
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ResultCookieType">
+            <summary>
+            Cookie返回类型,默认的是只返回字符串类型
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.ICredentials">
+            <summary>
+            获取或设置请求的身份验证信息。
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.MaximumAutomaticRedirections">
+            <summary>
+            设置请求将跟随的重定向的最大数目
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.IfModifiedSince">
+            <summary>
+            获取和设置IfModifiedSince，默认为当前日期和时间
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpItem.IPEndPoint">
+             <summary>
+             设置本地的出口ip和端口
+             </summary>]
+             <example>
+            item.IPEndPoint = new IPEndPoint(IPAddress.Parse("192.168.1.1"),80);
+             </example>
+        </member>
+        <member name="T:Bingo.Common.HttpResult">
+            <summary>
+            Http返回参数类
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.Cookie">
+            <summary>
+            Http请求返回的Cookie
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.CookieCollection">
+            <summary>
+            Cookie对象集合
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.Html">
+            <summary>
+            返回的String类型数据 只有ResultType.String时才返回数据，其它情况为空
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.ResultByte">
+            <summary>
+            返回的Byte数组 只有ResultType.Byte时才返回数据，其它情况为空
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.Header">
+            <summary>
+            header对象
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.StatusDescription">
+            <summary>
+            返回状态说明
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.StatusCode">
+            <summary>
+            返回状态码,默认为OK
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.ResponseUri">
+            <summary>
+            最后访问的URl
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.HttpResult.RedirectUrl">
+            <summary>
+            获取重定向的URl
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.ResultType">
+            <summary>
+            返回类型
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.ResultType.String">
+            <summary>
+            表示只返回字符串 只有Html有数据
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.ResultType.Byte">
+            <summary>
+            表示返回字符串和字节流 ResultByte和Html都有数据返回
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.PostDataType">
+            <summary>
+            Post的数据格式默认为string
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.PostDataType.String">
+            <summary>
+            字符串类型，这时编码Encoding可不设置
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.PostDataType.Byte">
+            <summary>
+            Byte类型，需要设置PostdataByte参数的值编码Encoding可设置为空
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.PostDataType.FilePath">
+            <summary>
+            传文件，Postdata必须设置为文件的绝对路径，必须设置Encoding的值
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.ResultCookieType">
+            <summary>
+            Cookie返回类型
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.ResultCookieType.String">
+            <summary>
+            只返回字符串类型的Cookie
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.ResultCookieType.CookieCollection">
+            <summary>
+            CookieCollection格式的Cookie集合同时也返回String类型的cookie
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.ICacheHelper.Get``1(Bingo.Common.CacheKeyGroup,System.String)">
+            <summary>
+            泛型获取数据缓存1
+            </summary>
+            <param name="keyGroup"></param>
+            <param name="cacheKey">键</param>
+        </member>
+        <member name="M:Bingo.Common.ICacheHelper.Add``1(Bingo.Common.CacheKeyGroup,System.String,``0,System.TimeSpan)">
+            <summary>
+            设置数据缓存1
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.ICacheHelper.DeleteFromGroup(Bingo.Common.CacheKeyGroup,System.String)">
+            <summary>
+            移除指定分组的缓存1
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.ICacheHelper.ChangeKey(System.String)">
+            <summary>
+            不使用超长的key值
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.ICacheHelper.AddToHash``1(Bingo.Common.CacheKeyGroup,System.String,``0)">
+            <summary>
+            插入到hash表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKeyGroup"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.ICacheHelper.DeleteFromHash(Bingo.Common.CacheKeyGroup,System.String)">
+            <summary>
+            从hash表删除
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKeyGroup"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.ICacheHelper.GetToAllDataInHash``1(Bingo.Common.CacheKeyGroup)">
+            <summary>
+            获取hash中说有信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKeyGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bingo.Common.CacheKeyGroup">
+            <summary>
+            枚举-缓存类型,redis使用
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.CacheKeyGroup.Regions">
+            <summary>
+            城市信息
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.CacheKeyGroup.TruckPosition">
+            <summary>
+            车辆位置信息
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.ContextKey">
+            <summary>
+            枚举-线程内对象管理类型,callcontext使用
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.CommonMapper">
+            <summary>
+                通用映射关系,如有大量复杂映射类型，请在Mapper文件夹下创建对应的映射关系
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.MyConfigurationManager">
+            <summary>
+            获取自定义的 json 配置文件
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.SendSMSAliHelper">
+            <summary>
+            阿里云短信发送帮助类
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AliyunSmsSender.Send(Bingo.Common.SmsObject)">
+            <summary>
+            发送短信
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.AliyunSmsSender.SignString(System.String,System.String)">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.SmsObject.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.SmsObject.Signature">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.SmsObject.TempletKey">
+            <summary>
+            模板Key
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.SmsObject.Data">
+            <summary>
+            短信数据
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.SmsObject.OutId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="T:Bingo.Common.MobileMessageManager">
+            <summary>
+            发送短信
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.MobileMessageManager.Send(System.String,System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+            发送
+            </summary>
+            <param name="phoneNum">电话号码</param>
+            <param name="content">内容</param>
+            <param name="tmplId">腾讯配置的短信模板Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.SmsSingleSender.Send(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            普通单发短信接口，明确指定内容，如果有多个签名，请在内容中以【】的方式添加到信息内容中，否则系统将使用默认签名
+            @param type 短信类型，0 为普通短信，1 营销短信
+            @param nationCode 国家码，如 86 为中国
+            @param phoneNumber 不带国家码的手机号
+            @param msg 信息内容，必须与申请的模板格式一致，否则将返回错误
+            @param extend 扩展码，可填空
+            @param ext 服务端原样返回的参数，可填空
+            @return SmsSingleSenderResult
+        </member>
+        <member name="M:Bingo.Common.SmsSingleSender.SendWithParam(System.String,System.String,System.Int32,System.Collections.Generic.List{System.String},System.String,System.String,System.String)">
+            指定模板单发
+            @param nationCode 国家码，如 86 为中国
+            @param phoneNumber 不带国家码的手机号
+            @param templId 模板 id
+            @param templParams 模板参数列表，如模板 {1}...{2}...{3}，那么需要带三个参数
+            @param extend 扩展码，可填空
+            @param ext 服务端原样返回的参数，可填空
+            @return SmsSingleSenderResult
+        </member>
+        <member name="M:Bingo.Common.SmsMultiSender.Send(System.Int32,System.String,System.Collections.Generic.List{System.String},System.String,System.String,System.String)">
+            普通群发短信接口，明确指定内容，如果有多个签名，请在内容中以【】的方式添加到信息内容中，否则系统将使用默认签名
+            【注意】海外短信无群发功能
+            @param type 短信类型，0 为普通短信，1 营销短信
+            @param nationCode 国家码，如 86 为中国
+            @param phoneNumbers 不带国家码的手机号列表
+            @param msg 信息内容，必须与申请的模板格式一致，否则将返回错误
+            @param extend 扩展码，可填空
+            @param ext 服务端原样返回的参数，可填空
+            @return SmsMultiSenderResult
+        </member>
+        <member name="M:Bingo.Common.SmsMultiSender.SendWithParam(System.String,System.Collections.Generic.List{System.String},System.Int32,System.Collections.Generic.List{System.String},System.String,System.String,System.String)">
+            指定模板群发
+            【注意】海外短信无群发功能
+            @param nationCode 国家码，如 86 为中国
+            @param phoneNumbers 不带国家码的手机号列表
+            @param templId 模板 id
+            @param params 模板参数列表
+            @param sign 签名，如果填空，系统会使用默认签名
+            @param extend 扩展码，可以填空
+            @param ext 服务端原样返回的参数，可以填空
+            @return SmsMultiSenderResult
+        </member>
+        <member name="M:Bingo.Common.Util.Init">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.Util.GetConfigByName(System.String)">
+            <summary>
+            获取配置信息
+            </summary>
+            <param name="configName"></param>
+        </member>
+        <member name="M:Bingo.Common.Util.GetConfig(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Bingo.Common.Util.ErrorCode.NoFail">
+            <summary>
+            默认未出错
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.Util.ErrorCode.AuthorFail">
+            <summary>
+                授权认证失败
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.Util.ErrorCode.AutoCatchError">
+            <summary>
+                系统异常
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.Util.ErrorCode.CommonError">
+            <summary>
+                普通错误
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.Util.ErrorCode.UserInfoGetError">
+            <summary>
+            获取用户信息错误
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.Util.ErrorCode.AppVersonError">
+            <summary>
+                授权认证失败
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.Util.CreateLog(Bingo.Common.LogInfo)">
+            <summary>
+                生成系统日志。
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.Util.GetNewToken">
+            <summary>
+                获取base64的短token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.ToMd5(System.String)">
+            <summary>
+            字符串MD5加密
+            <remarks>
+            </remarks>
+            </summary>
+            <param name="source">目标字符串</param>
+            <returns>md5结果字符串</returns>
+        </member>
+        <member name="M:Bingo.Common.Util.PasswordEncrypt(System.String)">
+            <summary>
+            密码加密
+            </summary>
+            <param name="source"></param>
+            <returns>Encrypted text</returns>
+        </member>
+        <member name="M:Bingo.Common.Util.GetDynamicMap">
+            <summary>
+            对象对对象
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Bingo.Common.Util.base64Characters">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <param name="savePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.IsBase64String(System.String)">
+            <summary>
+            验证字符串是否为base64
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.Description(System.Enum)">
+            <summary>
+            获取描述信息
+            </summary>
+            <param name="en"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.CompareTimeSpan(System.DateTime,System.DateTime)">
+            <summary>
+            时间比较
+            </summary>
+            <param name="t1"></param>
+            <param name="t2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.DateTimeToUnixTimestamp(System.DateTime)">
+            <summary>
+            转换为unix时间戳
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.GetEnumDes(System.Enum)">
+            <summary>
+            获取描述信息
+            </summary>
+            <param name="en">枚举</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.GetEnumName(System.Enum)">
+            <summary>
+            获取描述信息
+            </summary>
+            <param name="en">枚举</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.ParseStringToEnum``1(System.String)">
+            <summary>
+            字符串转换为枚举
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.IsIP(System.String)">
+            <summary>
+            检查IP地址格式
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Common.Util.GetPaged``1(System.Linq.IQueryable{``0},System.Int32,System.Int32)">
+            <summary>
+            根据Ip地址获取所在的城市位置
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.PerformaneCounterCategory">
+            <summary>
+                新能计数分类名称
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.ProcessId">
+            <summary>
+                当前进程ID
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.ActionType">
+            <summary>
+                anction类型是mvc还是webapi
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.ControllerName">
+            <summary>
+                控制器名称
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.ActionName">
+            <summary>
+                Gets/sets the name of this action
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.HttpMethod">
+            <summary>
+                http方法
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.Parameters">
+            <summary>
+                action参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.InstanceName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.SanitizedInstanceName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.ContentLength">
+            <summary>
+                内容长度
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.CallStartTime">
+            <summary>
+            调用开始时间
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.CallEndTime">
+            <summary>
+            调用结束时间
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.OutPutContent">
+            <summary>
+            输出内容
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.RequestContent">
+            <summary>
+            输出内容
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.IsError">
+            <summary>
+            是否异常
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.ErrorMessage">
+            <summary>
+            异常消息
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ActionInfo.ElapsedTime">
+            <summary>
+            调用总耗时
+            </summary>
+        </member>
+        <member name="M:Bingo.Common.ActionInfo.DetermineRawInstanceName">
+            <summary>
+                测量原生实例信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bingo.Common.ResultPakage`1">
+            <summary>
+            返回结果集数据包
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Bingo.Common.ResultPakage`1.IsSuccess">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ResultPakage`1.ErrorMessage">
+            <summary>
+            错误描述,出错时此字段有值
+            </summary>
+        </member>
+        <member name="F:Bingo.Common.ResultPakage`1.DateTimeNow">
+            <summary>
+            服务器当前时间
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ResultPakage`1.ErrorCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ResultPakage`1.Result">
+            <summary>
+            泛型返回类型集合
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ResultPakage`1.PageCount">
+            <summary>
+            返回记录数
+            </summary>
+        </member>
+        <member name="P:Bingo.Common.ResultPakage`1.TotalCount">
+            <summary>
+            返回记录总数
+            </summary>
+        </member>
+        <member name="T:Bingo.Controllers.OrderController">
+            <summary>
+            订单服务
+            </summary>
+        </member>
+        <member name="M:Bingo.Controllers.OrderController.PostOrder(Bingo.Models.Order)">
+            <summary>
+            创建订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bingo.Controllers.OrderController.GetOrder(Bingo.Models.Order)">
+            <summary>
+            创建订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bingo.Models.Order">
+            <summary>
+            订单实体
+            </summary>
+        </member>
+        <member name="P:Bingo.Models.Order.BuyerName">
+            <summary>
+            购买人姓名
+            </summary>
+        </member>
+        <member name="P:Bingo.Models.Order.PurchaseOrderNumber">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:Bingo.Models.Order.BillingZipCode">
+            <summary>
+            ZipCode
+            </summary>
+        </member>
+        <member name="P:Bingo.Models.Order.OrderAmount">
+            <summary>
+            订购数量
+            </summary>
+        </member>
+        <member name="M:Bingo.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KidneyCareApi.Common.RedisCacheHelper.Get``1(Bingo.Common.CacheKeyGroup,System.String)">
+            <summary>
+            泛型获取数据缓存1
+            </summary>
+            <param name="keyGroup"></param>
+            <param name="cacheKey">键</param>
+        </member>
+        <member name="M:KidneyCareApi.Common.RedisCacheHelper.Add``1(Bingo.Common.CacheKeyGroup,System.String,``0,System.TimeSpan)">
+            <summary>
+            设置数据缓存1
+            </summary>
+        </member>
+        <member name="M:KidneyCareApi.Common.RedisCacheHelper.AddToHash``1(Bingo.Common.CacheKeyGroup,System.String,``0)">
+            <summary>
+            设置数据到hash表
+            </summary>
+            <param name="cacheKeyGroup">缓存的业务分组,需自定义缓存的业务分类,避免缓存键值重复</param>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KidneyCareApi.Common.RedisCacheHelper.DeleteFromHash(Bingo.Common.CacheKeyGroup,System.String)">
+            <summary>
+            从hash表删除
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKeyGroup"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KidneyCareApi.Common.RedisCacheHelper.GetToAllDataInHash``1(Bingo.Common.CacheKeyGroup)">
+            <summary>
+            获取hash值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKeyGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KidneyCareApi.Common.RedisCacheHelper.DeleteFromGroup(Bingo.Common.CacheKeyGroup,System.String)">
+            <summary>
+            移除指定分组的缓存1
+            </summary>
+        </member>
+        <member name="M:KidneyCareApi.Common.RedisCacheHelper.ChangeKey(System.String)">
+            <summary>
+            不使用超长的key值
+            </summary>
+        </member>
+    </members>
+</doc>
